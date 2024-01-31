@@ -10,8 +10,8 @@ services:
       - "443:443"
     volumes:
       - /var/run/docker.sock:/tmp/docker.sock:ro
-    network_mode: "host"
-
+    networks:
+      - nginx-proxy-net
   dnsmasq:
     build: dnsmasq/.
     image: rohammosalli/dnsmasq:v1
@@ -21,4 +21,7 @@ services:
       - "53:53/udp"
     volumes:
       - ./dnsmasq/proxy.conf:/etc/dnsmasq.d/proxy.conf
-    network_mode: "host"
+    networks:
+      - nginx-proxy-net
+networks:
+  nginx-proxy-net:
