@@ -26,7 +26,7 @@ general:
   # Interface used for outbound TLS connections. uses OS prefered one if empty
   interface:
   # Public IPv4 of the server, reply address of DNS A queries
-  public_ipv4: 127.0.0.1 # Dummy IP to supress "error" message
+  public_ipv4: 195.238.231.4 # Dummy IP to supress "error" message
   # Public IPv6 of the server, reply address of DNS AAAA queries
   public_ipv6: ::1 # Dummy IP to supress "error" message
   # log level for the application. choices: debug, info, warn, error
