@@ -54,7 +54,7 @@ acl:
     enabled: false # false means ALL domains will be allowed to go through the proxy
   # IP/CIDR filtering
   cidr:
-    enabled: true
+    enabled: false
     # priority of the cidr filter. lower priority means it's checked first. if multiple filters have the same priority, they're checked in random order
     priority: 10
     # Path to the CIDR list. eg: /tmp/cidr.csv. Look at the example file for the format.
