@@ -20,7 +20,7 @@ RUN ARCH=$(case ${TARGETPLATFORM:-linux/amd64} in \
 COPY configs/sniproxy/config.yaml /etc/sniproxy/config.yaml
 COPY entrypoint.sh /entrypoint.sh
 
-EXPOSE 80 443 53
+EXPOSE 80 443
 
 
 CMD ["/bin/bash", "/entrypoint.sh"]
