@@ -18,6 +18,7 @@ RUN ARCH=$(case ${TARGETPLATFORM:-linux/amd64} in \
   && chmod +x sniproxy && install sniproxy /usr/local/bin && rm sniproxy
 
 COPY configs/sniproxy/config.yaml /etc/sniproxy/config.yaml
+COPY entrypoint.sh /entrypoint.sh
 
 EXPOSE 80 443 53
 
