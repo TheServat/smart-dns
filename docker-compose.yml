@@ -25,3 +25,4 @@ services:
       - nginx-proxy-net
 networks:
   nginx-proxy-net:
+    network_mode: host
